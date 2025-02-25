@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: price-services
+  namespace: price  # namespace the same deployement
+spec:
+  selector:
+    app: price-services-app  #  Pod choose Deployment label
+  ports:
+    - protocol: TCP
+      port: 443           # Port extenal
+      targetPort: 443    # Port in container
+  type: LoadBalancer     # LoadBalancer provide IP address
