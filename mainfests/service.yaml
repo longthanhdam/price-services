@@ -8,6 +8,6 @@ spec:
     app: price-services-app  #  Pod choose Deployment label
   ports:
     - protocol: TCP
-      port: 443           # Port extenal
-      targetPort: 443    # Port in container
+      port: 3001           # Port extenal
+      targetPort: 80    # Port in container
   type: LoadBalancer     # LoadBalancer provide IP address
