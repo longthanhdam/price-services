@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: price-services-app
-        image: mmregistry.mmvietnam.com:5000/price-services:0.0.1_41
+        image: mmregistry.mmvietnam.com:5000/price-services:0.0.1_42
         ports:
         - containerPort: 8080
       imagePullSecrets:
